@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --amarelo-fundo:#f7dd43;
+  --branco-fonte:white;
+  --preto-fonte:black;
+  --azul-nav:#042940;
+
+
+  
+}
+
+
+
+nav {
+    width: 100%; 
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color:var(--azul-nav);
+    float: left;
+    color: var(--branco-fonte);
+}
+nav ul li {
+    display: inline;
+    list-style: none;
+    padding-right: 20px;
+    padding: 50px 15px;
+}
+.left{
+    float: left;
+    cursor: pointer;
+}
+.right{
+    float: right;
+    cursor: pointer;
+}
+[class*="col-"] {
+    float: left;
+    padding: 5px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width:41.66%;}
+.col-6 {width:50%;}
+.col-7 {width:58.33%;}
+.col-8 {width:66.66%;}
+.col-9 {width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%}
+
+/* figurinha*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body * {
+  font-family: "Roboto";
+}
+
+body {
+  background-color: var(--amarelo-fundo);
+  height: 100vh;
+
+  text-align: center;
+}
+
+header {
+  padding: 75px 0;
+}
+/*
+.card {
+  display: inline-block;
+  width: 354px;
+  height: 508px;
+
+  background-image: url('/assets/bg-explorer.svg');
+
+  cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: appear 0.4s forwards;
+
+  user-select: none;
+  -webkit-user-select: none;
+}*/
+
+.card > img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--amarelo-fundo);
+  margin-top: 115px;
+
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.info {
+  margin-top: 98px;
+  color: var(--branco-fonte);
+  margin-left: 70px;
+  text-align: left;
+}
+
+.info h1 {
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.info  p {
+  font-size: 14px;
+  line-height: 160%;
+}
+
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/*rodar figurinha*/
+
+
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+/* This container is needed to position the front and back side */
+.flip-card {
+  display: inline-block;
+  /* background-color: transparent; */
+  width: 354px;
+  height: 508px;
+  perspective: 1000px;
+  
+  cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(-100px);
+  animation: appear 0.4s forwards;
+
+  user-select: none;
+  -webkit-user-select: none;
+
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-image: url('/bg-ignite.svg');
+  /* background-color: #bbb;
+  color: black; */
+}
+
+.flip-card-back {
+  background-image: url('/bg-explorer.svg');
+  /* background-color: #2980b9; */
+  color: var(--branco-fonte);
+  transform: rotateY(180deg);
+  padding-top: 100px;
+}
+
+.flip-card-front > img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f7dd43;
+  margin-top: 100px;
+
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.flip-card-back .numero {
+  padding-top: 150px;
+  
+}
+
+.posicao {
+  padding-top: 120px;
+  font-size: 25px;
+  color: var(--branco-fonte);
+}
+
